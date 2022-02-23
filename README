@@ -1,0 +1,14 @@
+To install, run the following commands: 
+`
+docker-compose up -d
+docker-compose exec app sh 
+composer install
+php artisan migrate
+php artisan db:seed
+exit
+docker-compose exec node sh
+npm install 
+npm run prod
+`
+
+
